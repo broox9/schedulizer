@@ -1,0 +1,10 @@
+- (DATA) Set up Holiday API
+https://holidayapi.com/
+node: https://github.com/joshtronic/node-holidayapi
+(or some other service)
+
+- (UI) highlight upcoming week
+
+- (UI) get select boxes actually working
+
+- (AUTH) get firebase google-auth working

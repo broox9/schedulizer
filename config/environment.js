@@ -20,6 +20,18 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    torii: {
+      sessionServiceName: 'session'
+    },
+
+    firebase: {
+      apiKey: "AIzaSyDRp_fTVI_O7WLZQeqsl1PKpR3uohUtdkw",
+      authDomain: "schedulizer-737d2.firebaseapp.com",
+      databaseURL: "https://schedulizer-737d2.firebaseio.com",
+      projectId: "schedulizer-737d2",
+      storageBucket: "schedulizer-737d2.appspot.com",
+      messagingSenderId: "992340983963"
     }
   };
 

@@ -1,0 +1,34 @@
+.login-section {
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  width: 80vw;
+  transform: translateX(-50%);
+  padding: 1rem;
+
+  input[type="email"],
+  input[type="password"] {
+    padding: 1rem .5rem;
+    border: none;
+    outline: none;
+  }
+
+  p.form-field {
+    border-bottom: 1px solid #aaa;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  label {
+    display: block;
+    color: #aaa;
+    font-size: 0.75rem;
+  }
+}
+
+button {
+  padding: 1rem 2rem;
+  background-color: forestgreen;
+  border: none;
+  color: #fff;
+}

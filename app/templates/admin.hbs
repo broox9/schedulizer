@@ -1,0 +1,22 @@
+<h2>Admin</h2>
+
+<form {{action 'createMonth' on='submit'}}>
+  <select name="selectedMonth" onchange={{action 'setMonth' value='target.value'}}>
+    {{#each monthsOfTheYear as |month index|}}
+      <option selected="{{eq index todayMonthIndex}}" value="{{index}}">{{month}}</option>
+    {{/each}}
+  </select>
+
+  <select name="selectedYear">
+    {{#each availableYears as |year index|}}
+      <option selected="{{eq year todayYear}}" value="{{year}}">{{year}}</option>
+    {{/each}}
+  </select>
+
+  <br />
+  <br />
+  <button type="submit">Generate Month</button>
+</form>
+
+
+{{outlet}}

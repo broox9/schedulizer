@@ -1,0 +1,37 @@
+body {
+  font-size: 16px;
+  font-family: San Francisco, Roboto, Helvetica Neue, Cabin, sans-serif;
+  font-color: #454545;
+
+  * {
+    line-height: 1;
+    font-weight: 300;
+  }
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+a, a:visited {
+  text-decoration: underline;
+  color: inherit;
+  font-weight: 500;
+}
+
+a.active {
+  font-weight: 300;
+  text-decoration: none;
+}

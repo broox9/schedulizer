@@ -1,0 +1,7 @@
+<h3>List of Servants</h3>
+<ul>
+  {{#each model as |servant|}}
+    <li>{{link-to servant.name 'servant.events' servant.id}}</li>
+  {{/each}}
+</ul>
+{{outlet}}
