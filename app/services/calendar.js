@@ -14,6 +14,8 @@ export default Ember.Service.extend({
 
   today,
 
+  _cal: cal,
+
   daysOfTheWeek: [ // this could always be replaced with i18n dates
     "Sunday",
     "Monday",

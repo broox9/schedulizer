@@ -1,0 +1,21 @@
+.brx-select-box {
+  display: inline-block;
+  border: 1px solid #ccc;
+  min-width: 100px;
+  width: auto;
+
+  &__selected {
+
+  }
+
+  &__list {
+    // display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    &.open {
+      display: block;
+    }
+  }
+}

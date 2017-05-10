@@ -1,0 +1,23 @@
+<div resizable="true">
+<h3>{{month}} {{year}}</h3>
+<table class="month-item">
+  {{#each formattedWeeks key="@index" as | week index | }}
+    <tr>
+      {{#each week key="week[@index].getDate()" as |day index|}}
+        <td
+        data-dateid={{day.id}}
+        class={{if day.isInCurrentMonth 'in-month' 'other-month'}}
+        ondragover={{action dragOverHandler}}
+        ondragenter={{action dragEnterHandler}}
+        ondrop={{action dropHandler}}
+        ondragleave={{action dragLeaveHandler}}
+        >
+          <span class="month-item--number">{{day.date}}</span>
+        </td>
+      {{/each}}
+    </tr>
+  {{/each}}
+</table>
+
+{{yield}}
+</div>

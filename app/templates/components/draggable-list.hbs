@@ -1,0 +1,12 @@
+<section>
+  <ul>
+    {{#each items as |user index|}}
+      <li draggable="true" data-user={{json user}} ondragstart={{action handleDragStart}}>
+        {{ user.name }}
+      </li>
+    {{/each}}
+  </ul>
+</section>
+
+
+{{yield}}
